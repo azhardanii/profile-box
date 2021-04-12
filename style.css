@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #323435;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2, p {
+    color: #4f5251;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #323435;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+main {
+    height: 100vh;
+    background: linear-gradient(to left top, #4f5251, #323435);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    max-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to left bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;    
+}
+
+.circle1, .circle2 {
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 10%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 15%;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to left bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 2rem;
+}
+
+.user h2 {
+    font-weight: 600;
+}
+
+.link {
+    display: flex;
+    margin: 1rem 0;
+    padding: .2rem 3.5rem;
+    align-items: center;
+}
+
+.link h2 {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.follow {    
+    background: linear-gradient(to left top, #4f5251, #323435);
+    font-size: .8rem;    
+    font-weight: 400;
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    width: 80%;
+}
+
+.follow img {
+    position: absolute;
+    top: -25%;
+    right: -8%;
+    width: 50px;
+}
+
+.follow h2 {
+    color: white;
+    width: 90%;
+    letter-spacing: .7px;
+}
+
+.status {
+    margin-bottom: 2.5rem;
+}
+
+.status input {
+    background: linear-gradient(to left bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border: none;
+    width: 70%;
+    padding: .7rem 1.5rem;
+    border-radius: 2rem;
+}
+
+.status input:focus {
+    outline: none;
+}
+
+.achieve {
+    flex: 2;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(to left top, rgba(255,255,255,0.8),rgba(255,255,255,0.5));
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+    padding:1.5rem;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.212);
+    justify-content: space-between;
+}
+
+.card img {    
+    aspect-ratio: 1/1;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2rem;
+    border: 3px solid #4f5251;
+}
+
+.card-info {
+    width: 80%;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    main {
+        height: 140vh;
+    }
+    
+    .dashboard {
+        flex-direction: row;
+        padding: 0 2rem;
+    }
+    
+    .glass {
+        flex-direction: column;
+        max-height: 90%;
+        width: 100%;
+    }
+
+    .follow {
+        padding: .7rem;
+        border-radius: 1rem;
+    }
+
+    .follow img {
+        display: none;
+    }
+
+    .follow h2 {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .achieve {
+        margin: 2rem 5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .follow h2 {
+        font-size: 1rem;
+    }
+
+    .card-info {
+        padding-left: 10px;
+    }
+
+    .card-info h2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .follow {
+        display: none;
+    }
+}
+
+
