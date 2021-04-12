@@ -165,7 +165,7 @@ main {
 
 @media (max-width: 576px) {
     main {
-        height: 140vh;
+        height: 160vh;
     }
     
     .dashboard {
