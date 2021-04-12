@@ -199,8 +199,8 @@ main {
 }
 
 @media (max-width: 425px) {
-    .follow h2 {
-        font-size: 1rem;
+    .follow {
+        display: none;
     }
 
     .card-info {
@@ -209,12 +209,6 @@ main {
 
     .card-info h2 {
         font-size: 1.1rem;
-    }
-}
-
-@media (max-width: 375px) {
-    .follow {
-        display: none;
     }
 }
 
