@@ -203,6 +203,10 @@ main {
         display: none;
     }
 
+    .achieve {
+        margin: 2rem 3rem;
+    }
+
     .card-info {
         padding-left: 10px;
     }
